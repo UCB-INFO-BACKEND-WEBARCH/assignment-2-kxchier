@@ -53,7 +53,10 @@ def get_category(category_id):
     if not category:
         return {"error": "Category not found"}, 404
 
-    return category.to_dict(include_tasks=True), 200
+    category_data = category.to_dict()
+    category_data["tasks"] = [task.to_dict() for task in category.tasks]
+
+    return {"category": category_data}, 200
 
 
 @app.route("/categories", methods=["POST"])
