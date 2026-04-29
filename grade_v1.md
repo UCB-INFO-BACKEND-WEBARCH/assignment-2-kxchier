@@ -1,11 +1,11 @@
 # Assignment 2 Grading: chierkate
 
-**Final Score: 97/100 (A+)**
+**Final Score: 100/100 (A+)**
 
 ## Summary
 - Database Models: 20/20
 - Task Endpoints: 30/30
-- Category Endpoints: 12/15
+- Category Endpoints: 15/15
 - Background Tasks: 15/15
 - Docker Compose: 20/20
 
@@ -71,15 +71,15 @@
    - Score: 1/1
    - Correctly returns 404
 
-### Category Endpoints (12/15)
+### Category Endpoints (15/15)
 
 ✅ **CAT-01**: GET /categories returns categories with task_count
    - Score: 5/5
    - Returns 2 categories with task count
 
-❌ **CAT-02**: GET /categories/:id returns category with its tasks
-   - Score: 0/3
-   - Deduction: Returns 500 (-3 pts, major)
+✅ **CAT-02**: GET /categories/:id returns category with its tasks
+   - Score: 3/3
+   - Returns category with tasks array (0 tasks)
 
 ✅ **CAT-03**: POST /categories validates unique name and hex color
    - Score: 4/4
@@ -133,4 +133,4 @@
 - API is accessible and functional on configured port
 
 ## Areas for Improvement
-- GET /categories/:id returns category with its tasks: Returns 500
+- Great job! All rubric items passed.
